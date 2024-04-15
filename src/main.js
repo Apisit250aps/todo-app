@@ -1,5 +1,7 @@
 import './assets/main.css'
 import './assets/base.css'
+import './assets/bootstrap/css/bootstrap.min.css'
+import './assets/bootstrap/js/bootstrap.bundle.min.js'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
