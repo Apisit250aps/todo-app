@@ -1,10 +1,11 @@
 <script setup>
-import SideBarComponent from './components/Navs/SideBarComponent.vue';
+import Drawer from './components/Layouts/Drawer/Drawer.vue';
 </script>
 
 <template>
-  <SideBarComponent is-show="true"/>
-  <main>
+  <Drawer >
     <RouterView />
-  </main>
+  </Drawer>
+  
+
 </template>
