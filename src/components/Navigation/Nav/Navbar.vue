@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar bg-base-100 w-full">
+    <div class="navbar bg-base-200 rounded-md lg:m-3 sticky">
         <slot></slot>
     </div>
 </template>
