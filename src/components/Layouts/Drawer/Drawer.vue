@@ -7,7 +7,7 @@ import SideLink from '@/components/Navigation/Menu/SideLink.vue';
 <template>
     <div class="drawer lg:drawer-open ">
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-        <div class="drawer-content container mx-auto">
+        <div class="drawer-content container mx-auto p-2">
             <!-- Page content here -->
             <Navbar>
                 <div class="flex-none lg:hidden">
@@ -63,11 +63,11 @@ import SideLink from '@/components/Navigation/Menu/SideLink.vue';
                     </div>
                 </div>
             </Navbar>
-            <main id="content" class="lg:m-3">
+            <main id="content" class="">
                 <slot></slot>
             </main>
         </div>
-        <div class="drawer-side lg:m-3 shadow-md ">
+        <div class="drawer-side shadow-md ">
             <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
             <SideMenu>
                 <li>
@@ -86,7 +86,7 @@ import SideLink from '@/components/Navigation/Menu/SideLink.vue';
 <style scoped>
 main#content {
 
-    height: 90dvh;
+    height: 100dvh;
     overflow-y: scroll !important;
 }
 </style>

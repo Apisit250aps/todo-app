@@ -1,13 +1,16 @@
 import axios from 'axios';
 
-const axiosInstance = axios.create({
+const apiClient = axios.create({
   // Add any default configuration here
   baseURL: 'http://localhost:3000/', // Example base URL for your Express.js backend
   timeout: 5000, // Example timeout
+  headers: {
+    'Content-Type': 'application/json',
+  },
 });
 
 // Optionally, you can add interceptors for request/response handling
-axiosInstance.interceptors.request.use(
+apiClient.interceptors.request.use(
   (config) => {
     // Add any request interceptors here
     // For example, you can add a CSRF token to every request
@@ -19,4 +22,4 @@ axiosInstance.interceptors.request.use(
   }
 );
 
-export default axiosInstance;
+export default apiClient;

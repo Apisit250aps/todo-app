@@ -1,11 +1,15 @@
 <script setup>
 import Drawer from '@/components/Layouts/Drawer/Drawer.vue';
 
+
+import { useCounterStore } from '@/stores/counter';
+const counter = useCounterStore()
 </script>
 
 <template>
   <Drawer>
     <div class="">
+      {{ counter.count  }}
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laborum eos fugiat consectetur. Voluptatibus
       facilis ea dignissimos veniam perspiciatis sapiente id quibusdam, officiis consectetur ex voluptates illum fugit
       numquam quia provident velit. Nostrum molestiae corrupti qui optio, enim quos sit a dolores at. Laboriosam qui
