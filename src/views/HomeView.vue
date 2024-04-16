@@ -145,5 +145,4 @@ import Drawer from '@/components/Layouts/Drawer/Drawer.vue';
       doloremque cum recusandae. Temporibus, delectus aspernatur?
     </div>
   </Drawer>
-
 </template>

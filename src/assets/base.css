@@ -9,7 +9,10 @@ main {
 html {
   height: 100%;
 } */
-
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+* {
+  font-family: "Itim", cursive;
+}
 html, body {
   overflow-y: hidden !important;
   height: 100dvh;

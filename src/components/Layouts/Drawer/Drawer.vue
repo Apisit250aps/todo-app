@@ -4,8 +4,6 @@ import SideMenu from '@/components/Navigation/Menu/SideMenu.vue';
 import SideLink from '@/components/Navigation/Menu/SideLink.vue';
 </script>
 
-
-
 <template>
     <div class="drawer lg:drawer-open ">
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
@@ -60,7 +58,7 @@ import SideLink from '@/components/Navigation/Menu/SideLink.vue';
                                 </a>
                             </li>
                             <li><a>Settings</a></li>
-                            <li><a>Logout</a></li>
+                            <li><a href="/auth/login">Logout</a></li>
                         </ul>
                     </div>
                 </div>
