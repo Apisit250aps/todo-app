@@ -17,17 +17,23 @@
             </svg>
             <input type="password" class="grow" placeholder="Password" v-model="login_form.password"/>
         </label>
-
+        
         <div class="divider"></div> 
-        <button type="submit" class="btn btn-lg btn-square w-full bg-base-300 mb-5">Login</button>
+        <button type="submit" class="btn btn-lg btn-square w-full bg-base-300 mb-5" @click="login($event)">Login</button>
         <a class="link" href="/auth/register">Go to Register -></a>
     </form>
 </template>
 
 <script setup>
+import Auth from '@/api/Auth';
+
 let login_form = {
     username:"",
     password:""
+}
+function login(e){
+    e.preventDefault();
+    Auth.login(login_form)
 }
 </script>
 
